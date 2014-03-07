@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .jumbotron
+        h1= title
+        p Welcome to #{title}
+
+    a(href='/translate')
+        h2 Translate a single word...
+    a(href='/quiz')
+        h2 Take a quiz...
+    a(href='/progress')
+        h2 View progress...

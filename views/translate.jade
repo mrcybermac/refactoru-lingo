@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h2 Translate a word:
+    form#langForm(action='/translate' method='post')
+        |From:
+        input#origLang(type='text' name='fromLang' placeholder='Language of the word to translate' value='fra')
+        | To:
+        input#newLang(type='text' name='toLang' placeholder='Desired language' value='eng')
+        input#coolWord(type='text' name='word' placeholder='Word to translate' value='bonjour')
+        input(type='submit')
+
+

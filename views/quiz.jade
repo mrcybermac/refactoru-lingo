@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to your #{title}
+
+    form#quizForm
+        p What language would you like to test yourself on?
+        select#fromLang(name="fromLang")
+            option(value="fra") French
+            option(value="spa") Spanish
+        input(type="submit")
+
